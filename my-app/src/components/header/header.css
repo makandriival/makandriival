@@ -1,0 +1,15 @@
+header {
+  background-color: rgb(22, 31, 24);
+  border-radius: 2rem;
+}
+
+header a {
+  position: relative;
+  left: 3%;
+  font-size: 1.5rem;
+}
+
+header h5 {
+  font-size: 1.5rem;
+  float: left;
+}
