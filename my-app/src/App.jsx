@@ -6,7 +6,6 @@ import Header from './components/header/Header'
 import About from './components/about/About'
 import Portfolio from './components/portfolio/Portfolio'
 import Contact from './components/contact/Contact'
-import Nav from '/Users/andriimakarov/Documents/GitHub/makandriival/makandriival/my-app/src/components/nav/Nav.jsx'
 
 import {useState} from 'react'
 

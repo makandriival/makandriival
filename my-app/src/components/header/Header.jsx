@@ -1,9 +1,5 @@
 import React from 'react';
 import './header.css';
-import {SiAtom} from 'react-icons/si';
-import Nav from '/Users/andriimakarov/Documents/GitHub/makandriival/makandriival/my-app/src/components/nav/Nav.jsx'
-
-// console.log(activeNav);
 
 const Header = () => {
   return (
