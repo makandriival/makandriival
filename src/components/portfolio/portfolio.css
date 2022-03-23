@@ -1,0 +1,16 @@
+.portfolio__container {
+  width: 99%;
+  display: flex;
+  gap: 2rem;
+  padding-top: 1rem;
+}
+
+.portfolio__item {
+  width: 33%;
+}
+
+article a {
+  font-size: 85%;
+  display: flex;
+  gap: 0.1rem;
+}
