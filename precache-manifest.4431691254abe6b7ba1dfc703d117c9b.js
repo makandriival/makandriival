@@ -1,10 +1,10 @@
 self.__precacheManifest = [
   {
-    "revision": "fdda0469448fc311f29d",
-    "url": "/makval/static/css/main.804ce5d9.chunk.css"
+    "revision": "5ab1e3817ff979dfc5db",
+    "url": "/makval/static/css/main.40fd15a9.chunk.css"
   },
   {
-    "revision": "fdda0469448fc311f29d",
+    "revision": "5ab1e3817ff979dfc5db",
     "url": "/makval/static/js/main.a0e02e9e.chunk.js"
   },
   {
@@ -36,7 +36,7 @@ self.__precacheManifest = [
     "url": "/makval/static/media/gifM.cb169199.gif"
   },
   {
-    "revision": "8662187ca05de0d3a30640279e5f152a",
+    "revision": "bde3bf2e6539dbd8ac48b1a0d1271556",
     "url": "/makval/index.html"
   }
 ];
