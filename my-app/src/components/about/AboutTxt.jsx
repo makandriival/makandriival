@@ -4,15 +4,8 @@
        import {useState} from 'react';
        import './about.css';
        
-       
-       
-       
-       
-       
        const AboutTxt = () => {
-         
-         
-         const SText = () => {
+           const SText = () => {
            return (
              <p>
             <p>

@@ -1,31 +1,39 @@
 header {
   /* border: tomato solid 1rem; */
-  background-color: rgba(1, 102, 22, 0.329);
+
   border-radius: 2rem;
-  max-width: 1000px;
+  max-height: 120px;
+  max-width: 200px;
   display: flex;
   align-items: center;
   justify-content: center;
 }
-
 header h1 {
-  color: rgba(112, 93, 8, 0.781);
   font-size: 3rem;
+}
+header h1:hover {
+  color: var(--border-clr);
+  transform: rotate(360deg);
+  transition: all 1s ease-in-out;
 }
 
 header h3 {
-  color: rgba(112, 93, 8, 0.781);
   margin-bottom: -1.5rem;
   float: right;
 }
 
 header h5 {
-  color: rgba(112, 93, 8, 0.781);
-  margin-top: -1.5rem;
+  margin-top: -2.9rem;
 }
 
 @media screen and (max-width: 800px) {
   header {
     max-width: 500px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  header {
+    max-width: 300px;
   }
 }

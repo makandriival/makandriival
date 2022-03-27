@@ -3,7 +3,8 @@ import './header.css';
 
 const Header = () => {
   return (
-    <header id='home' className='portfolio'>
+  
+    <header>
         <div>
             <h3>Makval's</h3>
             <h1>Portfolio</h1>

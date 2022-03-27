@@ -1,13 +1,13 @@
 import React from 'react'
 
-
-
+import Intro from './components/intro/Intro'
 import Header from './components/header/Header'
 import About from './components/about/About'
 import Portfolio from './components/portfolio/Portfolio'
 import Contact from './components/contact/Contact'
 
 import {useState} from 'react'
+import { useEffect } from 'react'
 
 import './components/nav/nav.css'
 
@@ -21,6 +21,7 @@ const App = () => {
   
   return (
     <>
+    <Intro/>
     <Header/>
     <nav>
       <a href="#about" onClick={()=>setActiveNav('About')} className={ activeNav === '#about' ? 'active' : '' }> About <CgHome className='nav__icons'/></a>
@@ -32,6 +33,7 @@ const App = () => {
       {activeNav==='About' && <About/>}
       {activeNav==='Portfolio' && <Portfolio/>}
       {activeNav==='Contact' && <Contact/>}
+
     </div>
     </>
   )

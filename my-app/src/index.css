@@ -6,44 +6,25 @@ html {
   justify-content: center;
 }
 
-* {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  outline: 0;
-  /* box-sizing: border-box; */
-  text-decoration: none;
-}
-
 h1 {
   text-align: center;
 }
 
 :root {
-  --color-bg: #ffc4005b;
-  --color-bg-variant: rgba(1, 102, 21, 0.404);
-  --color-primary: #21831e88;
-  --color-primary-variant: rgb(7, 104, 173);
-  --color-white: rgb(123, 143, 82);
-  --color-light: rgb(0, 0, 0);
-  --color-border: rgba(167, 185, 11, 0.616);
+  --bg-card: gray;
+  --border-clr: rgb(255, 0, 212);
+  --border-clr-alter: rgb(0, 255, 255);
 
-  --transition: all 400ms ease;
-
-  --container-width-lg: 75%;
-  --container-width-md: 86%;
-  --container-width-sm: 90%;
+  --transition: all 700ms ease-in-out 25ms;
 }
 
 body {
-  padding: 2rem;
-  /* font-family: "Poppins", sans-serif; */
+  padding: 1rem;
+  font-family: "Poppins", sans-serif;
   background: var(--color-bg);
 
   color: var(--color-white);
   line-height: 1.7;
-  background-image: url("./assets/img/gifM.gif");
-  background-size: cover;
 }
 
 /* ============ Gen Styles =============== */
@@ -68,10 +49,6 @@ body {
     font-weight: 500;
   }
 
-  h1 {
-    font-size: 2.5rem;
-  }
-
   section {
     margin-top: 3%;
   }
@@ -92,39 +69,18 @@ body {
   }
 
   a {
-    color: var(--color-primary);
+    text-decoration: none;
+    border-radius: 1rem;
+    padding: 0.5rem;
+    color: rgb(1, 240, 248);
     transition: var(--transition);
   }
 
   a:hover {
-    color: var(--color-white);
+    color: rgb(250, 4, 229);
   }
 
   img {
     max-width: 100%;
   }
 }
-
-/* ========= Media Devises Med =============
-
-@media screen and (max-width: 1024px) {
-  .container {
-    width: var(--container-width-md);
-  }
-
-  section {
-    margin-top: 6rem;
-  }
-}
-
-/* ========= Media Devises Small =============*/
-
-/* @media screen and (max-width: 600px) {
-  .container {
-    width: var(--container-width-sm);
-  }
-
-  section > h2 {
-    margin-bottom: 2rem;
-  }
-} */
