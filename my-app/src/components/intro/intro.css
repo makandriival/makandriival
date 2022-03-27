@@ -20,22 +20,9 @@
 }
 .logo {
   font-size: 3rem;
-  /* z-index: 2; */
-  /* color: #ffffff; */
   position: relative;
   display: inline-block;
   bottom: -20px;
   opacity: 0;
 }
 
-.logo.active {
-  bottom: 0;
-  opacity: 1;
-  transition: ease-in-out 0.5s;
-}
-
-.logo.fade {
-  bottom: 150px;
-  opacity: 0;
-  transition: ease-in-out 0.5s;
-}
