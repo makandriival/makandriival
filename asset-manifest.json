@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/makval/static/css/main.4639fe7e.css",
-    "main.js": "/makval/static/js/main.c9d06d29.js",
+    "main.css": "/makval/static/css/main.9b663bef.css",
+    "main.js": "/makval/static/js/main.eea30180.js",
     "static/media/img-about.png": "/makval/static/media/img-about.80d24b180fa770d5a23a.png",
     "static/media/pho.png": "/makval/static/media/pho.aa2aa107f12e72d46dc5.png",
     "static/media/tat.png": "/makval/static/media/tat.ab6c9bff7b9071c3674a.png",
     "static/media/blo.jpeg": "/makval/static/media/blo.75c0b534e1ceeb7148b3.jpeg",
     "index.html": "/makval/index.html",
-    "main.4639fe7e.css.map": "/makval/static/css/main.4639fe7e.css.map",
-    "main.c9d06d29.js.map": "/makval/static/js/main.c9d06d29.js.map"
+    "main.9b663bef.css.map": "/makval/static/css/main.9b663bef.css.map",
+    "main.eea30180.js.map": "/makval/static/js/main.eea30180.js.map"
   },
   "entrypoints": [
-    "static/css/main.4639fe7e.css",
-    "static/js/main.c9d06d29.js"
+    "static/css/main.9b663bef.css",
+    "static/js/main.eea30180.js"
   ]
 }
