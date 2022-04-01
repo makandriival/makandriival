@@ -1,86 +1,60 @@
 @import url("https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200;0,900;1,300;1,600&display=swap");
 
-html {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-h1 {
-  text-align: center;
-}
-
 :root {
   --bg-card: gray;
-  --border-clr: rgb(255, 0, 212);
-  --border-clr-alter: rgb(0, 255, 255);
+  --border-clr: #43cc47;
+  --border-clr-alter: ;
 
   --transition: all 700ms ease-in-out 25ms;
 }
 
 body {
-  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
   font-family: "Poppins", sans-serif;
-  background: var(--color-bg);
-
-  color: var(--color-white);
   line-height: 1.7;
+  position: relative;
+  width: 100%;
+  background: linear-gradient(90deg, white, rgba(128, 128, 128, 0.288), white);
+  animation: animBack 10s infinite;
 }
 
-/* ============ Gen Styles =============== */
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-weight: 500;
+}
 
-@media screen and (min-width: 800px) {
-  header {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    max-width: 900px;
-  }
-  .container {
-    /* border: solid 1rem red; */
-    max-width: 800px;
-  }
+a {
+  text-decoration: none;
+  border-radius: 1rem;
+  padding: 0.5rem;
+  color: rgb(1, 240, 248);
+  transition: var(--transition);
+}
 
-  h1,
-  h2,
-  h3,
-  h4,
-  h5 {
-    font-weight: 500;
-  }
+a:hover {
+  color: rgb(250, 4, 229);
+}
 
-  section {
-    margin-top: 3%;
+@keyframes animBack {
+  0% {
+    background-position: 0;
   }
-
-  section > h2,
-  section > h5 {
-    text-align: center;
-    color: var(--color-light);
+  50% {
+    background-position: 100vh;
   }
-
-  section > h2 {
-    color: var(--color-primary);
-    margin-bottom: 3rem;
+  100% {
+    background-position: 0;
   }
+}
 
-  .text-light {
-    color: var(--color-light);
-  }
-
-  a {
-    text-decoration: none;
-    border-radius: 1rem;
-    padding: 0.5rem;
-    color: rgb(1, 240, 248);
-    transition: var(--transition);
-  }
-
-  a:hover {
-    color: rgb(250, 4, 229);
-  }
-
-  img {
-    max-width: 100%;
+@media screen and (max-width: 800px) {
+  body {
+    animation: animBack 30s infinite;
   }
 }

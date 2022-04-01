@@ -3,69 +3,64 @@
   gap: 3rem;
 }
 .about__me {
-  max-width: 1000px;
-  /* aspect-ratio: 1/1; */
-  border-radius: 2rem;
+  height: fit-content;
+  margin-bottom: 1rem;
 
-  display: grid;
-  place-items: center;
-}
-.about__me:hover {
-  background: linear-gradient(35deg, transparent, var(--bg-card), transparent);
+  border-radius: 1rem;
+  display: flex;
+  justify-content: center;
+  background: linear-gradient(
+    -60deg,
+    grey,
+    rgb(255, 255, 255),
+    var(--border-clr)
+  );
   transition: var(--transition);
 }
 
-.about__me-img {
-  border-radius: 2rem;
-  border: 3px solid transparent;
-  overflow: hidden;
-  transform: rotate(15deg);
+img {
+  /* max-height: 500px; */
+  width: 100%;
+  border-radius: 1rem;
+  border: 1px solid transparent;
+  transform: rotate(5deg);
   transition: var(--transition);
 }
 
-.about__me-img:hover {
+img:hover {
+  border: 5px solid var(--border-clr);
   transform: rotate(0deg);
 }
 
 .about__cards {
   display: flex;
-
+  justify-content: center;
   gap: 1.5rem;
 }
 
 .about__card {
-  border: 3px solid transparent;
+  border: 3px solid rgba(255, 0, 212, 0.041);
   border-radius: 1rem;
   padding: 0.5rem;
-
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
 .about__card:hover {
-  background: var(--bg-card);
+  border: solid 3px var(--border-clr);
   border-radius: 2rem;
   transition: var(--transition);
 }
 
 .about__icon {
   margin-right: 0.5rem;
-
-  color: var(--color-primary);
   font-size: 2.5rem;
   margin-bottom: 0.5rem;
 }
 
 .about__card h3 {
   font-size: 1rem;
-}
-
-.aboutTxt {
-  padding-top: 1rem;
-  max-width: 1000px;
-  border-radius: 1.5rem;
-  padding-bottom: 10rem;
 }
 
 p {
@@ -76,6 +71,8 @@ p {
 }
 
 .bullets {
+  display: grid;
+  justify-content: center;
   margin: 1rem;
 }
 
@@ -84,6 +81,7 @@ p {
   margin-left: 1.5rem;
   list-style-type: "⥤ ";
 }
+
 /* ============small device=============== */
 
 @media screen and (max-width: 800px) {
@@ -96,28 +94,8 @@ p {
     gap: 2rem;
     max-width: 600px;
   }
-  .about__me {
-    margin-top: 1rem;
-    max-width: 500px;
-    aspect-ratio: 1/0.75;
-    border-radius: 2rem;
-    background: linear-gradient(
-      45deg,
-      transparent,
-      var(--color-primary),
-      transparent
-    );
-    display: grid;
-    place-items: center;
-  }
-
-  img {
-    border-radius: 1rem;
-    max-width: 100%;
-  }
 
   .about__me-img {
-    /* border-radius: 2rem; */
     border-radius: 1rem;
     max-width: 100%;
     border: 3px solid transparent;
@@ -126,54 +104,8 @@ p {
     transition: var(--transition);
   }
 
-  .about__me-img:hover {
-    transform: rotate(0deg);
-    border-color: var(--color-border);
-  }
-
-  .about__cards {
-    display: flex;
-    gap: 1.5rem;
-  }
-
-  .about__card {
-    background: var(--color-bg-variant);
-    border: 3px solid transparent;
-    border-radius: 1rem;
-    padding: 0.5rem;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-
-  .about__card:hover {
-    border-color: var(--color-border);
-    border-radius: 2rem;
-    transition: var(--transition);
-  }
-
-  .about__icon {
-    margin-right: 0.5rem;
-
-    color: var(--color-primary);
-    font-size: 2.5rem;
-    margin-bottom: 0.5rem;
-  }
-
-  .about__card h3 {
-    font-size: 1rem;
-  }
-
   .aboutTxt {
     padding-top: 1rem;
-    max-width: 1000px;
-    /* margin: 1rem; */
-    color: var(--color-light);
-
-    background-color: rgba(255, 248, 220, 0.308);
-
-    border-radius: 1.5rem;
     padding-bottom: 1rem;
   }
 
@@ -215,20 +147,6 @@ p {
 
   .about__card {
     padding: 0.3rem;
-  }
-
-  .aboutTxt {
-    /* margin-left: 1rem; */
-    padding-top: 1rem;
-    /* max-width: 400px;
-    min-width: 350px; */
-
-    color: var(--color-light);
-
-    background-color: rgba(255, 248, 220, 0.308);
-
-    border-radius: 1.5rem;
-    padding-bottom: 6rem;
   }
 
   p {

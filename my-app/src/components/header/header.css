@@ -1,39 +1,24 @@
-header {
-  /* border: tomato solid 1rem; */
-
-  border-radius: 2rem;
-  max-height: 120px;
-  max-width: 200px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.animA {
+  position: absolute;
+  top: 5px;
+  z-index: 5;
 }
-header h1 {
+
+.animB {
+  position: absolute;
+  z-index: 5;
+  top: 60px;
+}
+
+.animC {
+  z-index: 5;
+  position: absolute;
   font-size: 3rem;
-}
-header h1:hover {
-  color: var(--border-clr);
-  transform: rotate(360deg);
-  transition: all 1s ease-in-out;
+  left: 40px;
 }
 
-header h3 {
-  margin-bottom: -1.5rem;
-  float: right;
-}
-
-header h5 {
-  margin-top: -2.9rem;
-}
-
-@media screen and (max-width: 800px) {
-  header {
-    max-width: 500px;
-  }
-}
-
-@media screen and (max-width: 450px) {
-  header {
-    max-width: 300px;
-  }
+header {
+  margin-bottom: 1rem;
+  min-height: 90px;
+  border-bottom: solid 2px var(--border-clr);
 }

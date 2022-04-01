@@ -6,34 +6,43 @@ import About from './components/about/About'
 import Portfolio from './components/portfolio/Portfolio'
 import Contact from './components/contact/Contact'
 
-import {useState} from 'react'
 import { useEffect } from 'react'
+import {useState} from 'react'
 
 import './components/nav/nav.css'
 
-import { CgHome } from 'react-icons/cg';
-import { IoMdContact } from 'react-icons/io';
-import {SiAtom} from 'react-icons/si';
+// import { CgHome } from 'react-icons/cg';
+// import { IoMdContact } from 'react-icons/io';
+// import {SiAtom} from 'react-icons/si';
 
 const App = () => {
   
   const [activeNav, setActiveNav] = useState('About');
+
+  React.useEffect(()=>{
+    const data = localStorage.getItem('actComp');
+    if (data) {setActiveNav(JSON.parse(data))};
+  }, [] );
+
+  React.useEffect(()=>{
+    localStorage.setItem('actComp', JSON.stringify(activeNav));
+  });
   
   return (
     <>
     <Intro/>
     <Header/>
     <nav>
-      <a href="#about" onClick={()=>setActiveNav('About')} className={ activeNav === '#about' ? 'active' : '' }> About <CgHome className='nav__icons'/></a>
-      <a href="#portfolio" onClick={()=>setActiveNav('Portfolio')} className={ activeNav === '#portfolio' ? 'active' : '' }> Portfolio <SiAtom className='nav__icons'/></a>
-      <a href="#contact" onClick={()=>setActiveNav('Contact')} className={ activeNav === '#contact' ? 'active' : '' }> Contact <IoMdContact className='nav__icons'/></a>
+      <button href="#about" onClick={()=>setActiveNav('About')} className={ activeNav === "About" ? 'act' : ''}> About </button>
+      <button href="#portfolio" onClick={()=>setActiveNav('Portfolio')} className={ activeNav === 'Portfolio' ? 'act' : '' }> Portfolio </button>
+      <button href="#contact" onClick={()=>setActiveNav('Contact')} className={ activeNav === 'Contact' ? 'act' : '' }> Contact </button>
     </nav>
     
     <div>
+
       {activeNav==='About' && <About/>}
       {activeNav==='Portfolio' && <Portfolio/>}
       {activeNav==='Contact' && <Contact/>}
-
     </div>
     </>
   )

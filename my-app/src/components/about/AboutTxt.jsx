@@ -7,7 +7,8 @@
        const AboutTxt = () => {
            const SText = () => {
            return (
-             <p>
+             <div className='smallText'>
+<a href='#about' onClick={()=>{extTxt('b')}}>Read more...</a>
             <p>
             ...working online and building my House in parallel.
             I'm studying JavaScript becoz i love to work remotely, and I am fascinated by the range of possible outcomes of 
@@ -17,17 +18,17 @@ Thx for reading my story.
 <p>
 Now you can go ahead and click the ‘React’ Icon in the Navigation bar it will take you to my portfolio, even tho i never worked as a developer I already did a couple of projects. Check them out pls!
 </p>
-<a href='#about' onClick={()=>{extTxt('b')}}>Read more...</a>
-            </p>
+            </div>
            )
           };
           
           const BText = () => {
             return (
-              <p className='big__text'>
+              <div className='big__text'>
  <a href='#about' onClick={()=>{extTxt('s')}}>Read less...</a>
             <br />
-              <p> Hi there! My name is Andrii Makarov, i'm a beginner JavaScript developer from Ukraine. I was born in the mid 90's, in a tiny town of Okhtyrka, Symy Region. If you’ve been following recent events you have probably heard about it. 
+              <p> Hi there! My name is Andrii Makarov, i'm a beginner JavaScript developer from Ukraine. I was born in the mid 90's, 
+                in a tiny town of Okhtyrka, Symy Region. If you’ve been following recent events you have probably heard about it. 
 In the university I was studying engineering, to be honest I was not the best student. What I really wanted is to explore the world. 
 </p>
 <p>After my second year of school I went for an internship to Europe and spent almost half a year in the south of Deutschland. Most beautiful mountains are there (I have never seen Himalayans, but so far Alps are the most beautiful for me).
@@ -46,7 +47,7 @@ Thx for reading my story.
 <p>
 Now you can go ahead and click the ‘React’ Icon in the Navigation bar it will take you to my portfolio, even tho i never worked as a developer I already did a couple of projects. Check them out pls!
 </p>           
-            </p>
+            </div>
             )
           };
           const [abText, extTxt]= useState('s');

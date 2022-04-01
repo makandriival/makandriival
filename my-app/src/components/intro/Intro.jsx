@@ -1,5 +1,4 @@
 import React from 'react'
-import { IoMdInfinite } from 'react-icons/io'
 import styled, { keyframes } from 'styled-components'
 import './intro.css'
 
@@ -9,12 +8,12 @@ export default function Intro (){
    
 
   return (
-        <Bg_anim className= 'intro'>
+        <BgAnim className= 'intro'>
         <div className='logo-header'>
-            <First className='logo' >Makval's</First> <Second className='logo'>WebSite</Second>
+            <First className='logo' >Makval's</First> <Second className='logo'>Portfolio</Second>
         </div>
         
-    </Bg_anim>
+    </BgAnim>
   )
 }
 
@@ -22,10 +21,11 @@ export default function Intro (){
 
 const bg_animation = keyframes`
 0% {}
-65% {top: -60vh; }
-100% {top: -100vh; }
+45% {top: -60vh;}
+65% {top: -60vh;}
+100% {top: -100vh}
 `
-const Bg_anim = styled.span`
+const BgAnim = styled.span`
 
 animation-name: ${bg_animation};
 animation-duration: 1.5s;

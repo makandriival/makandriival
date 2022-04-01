@@ -18,7 +18,7 @@ const Portfolio = () => {
         </div>
         <h3>Project name/title!</h3>
             <a href="link to github">GitHub</a>
-            <a href="link to live demo">Live Demo</a>
+            <a href='./projects/tattoo-studio/tattoo.html'>Tattoo Live Demo</a>
         </article>
 
         <article className='portfolio__item'>
