@@ -8,7 +8,7 @@ import phoImg from '../../assets/img/pho.png'
 const Portfolio = () => {
   return (
     <section id='portfolio'>
-      <h5>My recent projects</h5>
+      <h2>My recent projects:</h2>
 
         <div className='portfolio__container'>
         

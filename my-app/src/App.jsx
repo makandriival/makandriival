@@ -37,6 +37,8 @@ const App = () => {
       <button href="#portfolio" onClick={()=>setActiveNav('Portfolio')} className={ activeNav === 'Portfolio' ? 'act' : '' }> Portfolio </button>
       <button href="#contact" onClick={()=>setActiveNav('Contact')} className={ activeNav === 'Contact' ? 'act' : '' }> Contact </button>
     </nav>
+
+      <button className='hireMeBtn' onClick={()=>setActiveNav('Contact')}>Hire Me!</button>
     
     <div>
 

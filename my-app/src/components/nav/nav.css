@@ -1,11 +1,12 @@
 nav {
-  z-index: 11;
-  background: rgba(28, 235, 1, 0.151);
-  backdrop-filter: blur(10px);
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  /* z-index: 11; */
+  background-color: rgba(0, 255, 85, 0.589);
+  /* backdrop-filter: blur(10px); */
+  /* display: flex; */
+  /* align-items: center; */
   position: fixed;
-  display: flex;
-  align-items: center;
-  top: 5px;
+  bottom: 5px;
   right: 5px;
 }
 
@@ -21,13 +22,38 @@ nav button:hover {
 }
 
 .act {
-  border-bottom: solid 3px var(--border-clr);
+  border-bottom: solid 1px var(--border-clr);
   transition: var(--transition);
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 330px) {
   nav {
     display: grid;
+  }
+}
+
+.hireMeBtn {
+  background-color: rgba(0, 255, 85, 0.589);
+  height: 2rem;
+  width: 5rem;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  position: fixed;
+  right: 1%;
+  top: 1%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0.9rem;
+}
+
+.hireMeBtn:hover {
+  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24),
+    0 17px 50px 0 rgba(0, 0, 0, 0.19);
+}
+
+@media screen and (max-width: 330px) {
+  .hireMeBtn {
+    left: 1%;
     top: 0;
   }
 }

@@ -9,6 +9,7 @@
 }
 
 body {
+  /* margin: 1rem; */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -17,7 +18,7 @@ body {
   line-height: 1.7;
   position: relative;
   width: 100%;
-  background: linear-gradient(90deg, white, rgba(128, 128, 128, 0.288), white);
+  /* background: linear-gradient(90deg, white, rgba(128, 128, 128, 0.288), white); */
   animation: animBack 10s infinite;
 }
 
@@ -41,7 +42,7 @@ a:hover {
   color: rgb(250, 4, 229);
 }
 
-@keyframes animBack {
+/* @keyframes animBack {
   0% {
     background-position: 0;
   }
@@ -57,4 +58,4 @@ a:hover {
   body {
     animation: animBack 30s infinite;
   }
-}
+} */

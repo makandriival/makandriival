@@ -11,6 +11,7 @@ const Header = () => {
             <AnimC className='animC'>Portfolio</AnimC>
             <AnimB className='animB'>React Developer</AnimB>
         </div>
+        
     </header>
   )
 };
