@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/makval/static/css/main.c87c77bd.css",
+    "main.css": "/makval/static/css/main.ee5aeca1.css",
     "main.js": "/makval/static/js/main.f5c8d78b.js",
     "static/media/header-img.jpg": "/makval/static/media/header-img.c5fa61fc224be4d0943e.jpg",
     "static/media/pho.png": "/makval/static/media/pho.aa2aa107f12e72d46dc5.png",
@@ -10,11 +10,11 @@
     "static/media/tat.png": "/makval/static/media/tat.ab6c9bff7b9071c3674a.png",
     "static/media/blo.jpeg": "/makval/static/media/blo.75c0b534e1ceeb7148b3.jpeg",
     "index.html": "/makval/index.html",
-    "main.c87c77bd.css.map": "/makval/static/css/main.c87c77bd.css.map",
+    "main.ee5aeca1.css.map": "/makval/static/css/main.ee5aeca1.css.map",
     "main.f5c8d78b.js.map": "/makval/static/js/main.f5c8d78b.js.map"
   },
   "entrypoints": [
-    "static/css/main.c87c77bd.css",
+    "static/css/main.ee5aeca1.css",
     "static/js/main.f5c8d78b.js"
   ]
 }
