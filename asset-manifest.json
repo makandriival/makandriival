@@ -1,8 +1,7 @@
 {
   "files": {
-    "main.css": "/makval/static/css/main.8dc5616b.css",
-    "main.js": "/makval/static/js/main.1c2c8f6f.js",
-    "static/media/header-img.jpg": "/makval/static/media/header-img.678e7d8b3217f0dfb76b.jpg",
+    "main.css": "/makval/static/css/main.3289383e.css",
+    "main.js": "/makval/static/js/main.1b281c74.js",
     "static/media/kino-app.png": "/makval/static/media/kino-app.62cf7de73f894afe2f59.png",
     "static/media/convert.png": "/makval/static/media/convert.1e764ab3dd33302ff108.png",
     "static/media/pho.png": "/makval/static/media/pho.aa2aa107f12e72d46dc5.png",
@@ -11,11 +10,11 @@
     "static/media/h8nXNQI1_male_9_cartoon6_preview.png": "/makval/static/media/h8nXNQI1_male_9_cartoon6_preview.a0e0d68fbf11b4339e39.png",
     "static/media/tat.png": "/makval/static/media/tat.ab6c9bff7b9071c3674a.png",
     "index.html": "/makval/index.html",
-    "main.8dc5616b.css.map": "/makval/static/css/main.8dc5616b.css.map",
-    "main.1c2c8f6f.js.map": "/makval/static/js/main.1c2c8f6f.js.map"
+    "main.3289383e.css.map": "/makval/static/css/main.3289383e.css.map",
+    "main.1b281c74.js.map": "/makval/static/js/main.1b281c74.js.map"
   },
   "entrypoints": [
-    "static/css/main.8dc5616b.css",
-    "static/js/main.1c2c8f6f.js"
+    "static/css/main.3289383e.css",
+    "static/js/main.1b281c74.js"
   ]
 }
