@@ -10,7 +10,7 @@ export default function Intro (){
   return (
         <BgAnim className= 'intro'>
         <div className='logo-header'>
-            <First className='logo' >Makval's</First> <Second className='logo'>Portfolio</Second>
+            <First className='logo' >Andrii Makarov</First> <Second className='logo'>Portfolio</Second>
         </div>
         
     </BgAnim>

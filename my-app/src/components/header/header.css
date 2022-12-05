@@ -1,27 +1,14 @@
-.animA {
-  position: absolute;
-  top: 5px;
-  z-index: 5;
-}
-
-.animB {
-  position: absolute;
-  z-index: 5;
-  top: 60px;
-}
-
-.animC {
-  z-index: 5;
-  position: absolute;
-  font-size: 3rem;
-  left: 40px;
-}
-
 header {
-  /* border: 1rem s; */
-  margin-bottom: 1rem;
-  min-height: 100px;
-  /* box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px,
-    rgba(6, 24, 44, 0.65) 0px 4px 6px -1px,
-    rgba(255, 255, 255, 0.08) 0px 1px 0px inset; */
+  margin: 1rem;
+}
+header h1 {
+  position: relative;
+  top: -0.65rem;
+  left: 30%;
+}
+
+header h3 {
+  position: absolute;
+  top: 4rem;
+  right: 10%;
 }

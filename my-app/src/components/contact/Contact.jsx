@@ -1,36 +1,103 @@
 import React from 'react'
 import './contact.css'
+import ContactAnim from './ContactAnim';
 
-import iconM from '../../assets/img/h8nXNQI1_male_9_cartoon1_preview.png'
+import { send } from 'emailjs-com';
 
-const Contact = () => {
+
+
+
+import { useState } from 'react';
+
+
+const Contact = (props) => {
+
+  const onSubmit = (e) => {
+    e.preventDefault();
+    send(
+      'service_yy2rsx5',
+      'template_k9n6wid',
+      toSend,
+      'gb5GKwn0ji0Ukl5dC'
+    )
+      .then((response) => {
+        console.log('SUCCESS!', response.status, response.text);
+        handleSubmit()
+      })
+      .catch((err) => {
+        console.log('FAILED...', err);
+      });
+      
+  };
+
+  const [toSend, setToSend] = useState({
+    name: '',
+    email: '',
+    pitch: '',
+    text: ''
+  });
+
+  const handleChange = (e) => {
+    setToSend({ ...toSend, [e.target.name]: e.target.value });
+  };
+
+  const handleSubmit = ()=>{
+    setToSend({
+      name: '',
+    email: '',
+    pitch: '',
+    text: ''
+    });
+    props.handleMod();
+    alert('Message sent successfully! I will get in touch with you shortly!');
+  };
+
   return (
+
+    
     <section  id='contact'>
       <div className='contact_container'>
      <span>
-      You can send me an email or submit the contact form!
+       Please, do not hesitate to submit!
      </span>
-     <br />
-       <img className='imgConntact' src={iconM} alt="makval icon" />
-     <span>
-      <a href="mailto:remote.makandriival@gmail.com">Click to send an email</a>
-     </span>
-
+      <ContactAnim/>
      <div className='contact-form'>
-       <form >
-         <label  htmlFor="fname"> Your name:
-           <input type="text" name='fname' id='fname' />
+       <form 
+       onSubmit={onSubmit} 
+       >
+         <label  htmlFor="name"> Your name:
+           <input type="text" name='name' id='name' placeholder='...'
+           value={toSend.name}
+           onChange={handleChange}
+           required
+           />
          </label> <br />
-         <label  htmlFor="email"> Your Email:
-           <input type="text" name='email' id='email' />
-         </label><br />
-         <label className='formText' htmlFor="massage"> Your massage:
-           <input className='inputText' type="text" name='massage' id='massage' />
-         </label><br />
-         <button>submit</button>
 
-       </form>
+         <label  htmlFor="email"> Your Email:
+           <input type="email" name='email' id='email' placeholder='...' 
+           value={toSend.email}
+           onChange={handleChange}
+           required
+           />
+         </label><br />
+
+         <label  htmlFor="textarea"> Your Message:
+           <textarea 
+           className='inputText' type="textarea" 
+           name='text' id='text' placeholder='text...'
+           value={toSend.text}
+           onChange={handleChange}
+           autoFocus
+           required/>
+         </label><br />
+
+        
+
+         <button>Submit</button>
+
+       </form>``
       </div>
+         <button onClick={props.handleMod} className='cls_btn'>X</button>
      </div>
 
     </section>
