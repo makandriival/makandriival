@@ -1,18 +1,31 @@
 header {
-  width: 100%;
+  /* border: tomato solid 1rem; */
   background-color: rgba(1, 102, 22, 0.329);
   border-radius: 2rem;
-
+  max-width: 1000px;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
+header h1 {
+  color: rgba(112, 93, 8, 0.781);
+  font-size: 3rem;
+}
+
 header h3 {
+  color: rgba(112, 93, 8, 0.781);
   margin-bottom: -1.5rem;
   float: right;
 }
 
 header h5 {
-  margin-top: -1.3rem;
+  color: rgba(112, 93, 8, 0.781);
+  margin-top: -1.5rem;
+}
+
+@media screen and (max-width: 800px) {
+  header {
+    max-width: 500px;
+  }
 }
