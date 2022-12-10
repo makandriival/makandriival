@@ -15,7 +15,7 @@ const Portfolio = () => {
         
         <article className='portfolio__item'>
         <div >   
-        <img className='portfolio__item-img' src={kinoImg} alt="hompage-kino-app" />
+        {/* <img className='portfolio__item-img' src={kinoImg} alt="hompage-kino-app" /> */}
         </div>
         
         <h3>Kino-React-App</h3>
@@ -26,8 +26,8 @@ const Portfolio = () => {
           <li>lots of props movement</li>
           <li>styling sucks, but hey im not a designer</li>
         </ul>
-            <a href="https://github.com/makandriival/kino-react-app/tree/main/kinomak">GitHub</a>
-            <a href='https://makandriival.github.io/kino-react-app/'>Kino-App Live Demo</a>
+            <a target='_blank' href="https://github.com/makandriival/kino-react-app/tree/main/kinomak">GitHub</a>
+            <a target='_blank' href='https://makandriival.github.io/kino-react-app/'>Kino-App Live Demo</a>
         </article>
 
         {/* <article className='portfolio__item'>
@@ -43,7 +43,7 @@ const Portfolio = () => {
 
         <article className='portfolio__item'>
         <div >   
-        <img className='portfolio__item-img' src={convertImg} alt="converter website logo" />
+        {/* <img className='portfolio__item-img' src={convertImg} alt="converter website logo" /> */}
         </div>
         <h3>Angular Currency Converter</h3>
         <ul>
@@ -53,18 +53,25 @@ const Portfolio = () => {
           <li>used ternary operator for converter logic</li>
           <li>its not perfect, but it works</li>
         </ul>
-            <a href="https://github.com/makandriival/converter-angular-project">GitHub</a>
-            <a href="https://makandriival.github.io/converter-angular-project/">Live Demo</a>
+            <a target='_blank' href="https://github.com/makandriival/converter-angular-project">GitHub</a>
+            <a target='_blank' href="https://makandriival.github.io/converter-angular-project/">Live Demo</a>
         </article>
 
-        {/* <article className='portfolio__item'>
+        <article className='portfolio__item'>
         <div className='portfolio__item-img'>   
-        <img src={phoImg} alt="photographer logo" />
+        {/* <img src={phoImg} alt="photographer logo" /> */}
         </div>
-        <h3>Project name/title!</h3>
-            <a href="link to github">GitHub</a>
-            <a href="link to live demo">Live Demo</a>
-        </article> */}
+        <h3>Currency-Converter-Angular-2</h3>
+        <ul>
+          <li>conversion hapens trough api call</li>
+          <li>angular app</li>
+          <li>rates and conversion trough exchangerate.host api</li>
+          <li>comunication with api trough http client servise</li>
+          <li>reactive forms for the input and select data collection</li>
+        </ul>
+            <a target='_blank' href="https://github.com/makandriival/angular-converter-2">GitHub</a>
+            <a target='_blank' href="https://makandriival.github.io/angular-converter-2/">Live Demo</a>
+        </article>
         
         
 
