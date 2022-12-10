@@ -48,8 +48,9 @@ const Portfolio = () => {
         <h3>Angular Currency Converter</h3>
         <ul>
           <li>angular web app</li>
-          <li>privatbank api</li>
-          <li>used ternary operator</li>
+          <li>monobank api</li>
+          <li>input to transfer the data</li>
+          <li>used ternary operator for converter logic</li>
           <li>its not perfect, but it works</li>
         </ul>
             <a href="https://github.com/makandriival/converter-angular-project">GitHub</a>
