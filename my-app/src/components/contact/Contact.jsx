@@ -1,5 +1,5 @@
 import React from 'react'
-import './contact.css'
+import './contact.scss'
 import ContactAnim from './ContactAnim';
 
 import { send } from 'emailjs-com';
@@ -10,7 +10,9 @@ import { send } from 'emailjs-com';
 import { useState } from 'react';
 
 
-const Contact = (props) => {
+const Contact = ({
+  closeContact
+}) => {
 
   const onSubmit = (e) => {
     e.preventDefault();
@@ -48,56 +50,59 @@ const Contact = (props) => {
     pitch: '',
     text: ''
     });
-    props.handleMod();
+    closeContact();
     alert('Message sent successfully! I will get in touch with you shortly!');
   };
 
   return (
 
     
-    <section  id='contact'>
-      <div className='contact_container'>
-     <span>
-       Please, do not hesitate to submit!
-     </span>
+    <section id='contact' className='contact'>
+      <div>
+        <div>
+          <span>
+            Please, do not hesitate to submit!
+          </span>
+          <button onClick={closeContact} className='btn cls_btn'>X</button>
+        </div>
+
       <ContactAnim/>
-     <div className='contact-form'>
+
        <form 
-       onSubmit={onSubmit} 
+       onSubmit={onSubmit}
+       className='contact__form'
        >
-         <label  htmlFor="name"> Your name:
-           <input type="text" name='name' id='name' placeholder='...'
+         <label  htmlFor="name">
+           <input type="text" name='name' id='name' placeholder='Your name...'
            value={toSend.name}
            onChange={handleChange}
            required
            />
-         </label> <br />
+         </label>
 
-         <label  htmlFor="email"> Your Email:
-           <input type="email" name='email' id='email' placeholder='...' 
+         <label  htmlFor="email">
+           <input type="email" name='email' id='email' placeholder='Email...' 
            value={toSend.email}
            onChange={handleChange}
            required
            />
-         </label><br />
+         </label>
 
-         <label  htmlFor="textarea"> Your Message:
+         <label  htmlFor="textarea">
            <textarea 
-           className='inputText' type="textarea" 
-           name='text' id='text' placeholder='text...'
+           className='inputText'
+           type="textarea" 
+           name='text' 
+           id='text' 
+           placeholder='Your Message...'
            value={toSend.text}
            onChange={handleChange}
            autoFocus
            required/>
-         </label><br />
+         </label>
 
-        
-
-         <button>Submit</button>
-
-       </form>``
-      </div>
-         <button onClick={props.handleMod} className='cls_btn'>X</button>
+         <button className='btn contact__form__submit'>Submit</button>
+       </form>
      </div>
 
     </section>

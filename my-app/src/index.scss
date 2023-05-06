@@ -1,0 +1,49 @@
+@import './vars';
+
+:root {
+  --bg-card: gray;
+  --border-clr: #43cc47;
+  --border-clr-alter: ;
+
+  --transition: all 700ms ease-in-out 25ms;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-weight: 100;
+  color: $text;
+  background-color: $background;
+}
+
+a {
+  text-decoration: none;
+  border-radius: 1rem;
+  padding: 0.5rem;
+  color: rgb(0, 96, 99);
+  transition: var(--transition);
+}
+
+a:hover {
+  color: rgb(152, 0, 139);
+}
+
+.btn {
+  border: 2px solid #294a6c;
+  border-radius: 5px;
+  background-color: #44586c;
+  color: #c7c8d3;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+
+  transition: ease-in-out 300ms;
+}
+
+.btn:hover {
+  transform: scale(110%);
+}
+
+.btn:focus {
+  outline: none;
+  box-shadow: 0 0 5px #0066CC;
+}
