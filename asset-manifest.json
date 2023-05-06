@@ -1,20 +1,16 @@
 {
   "files": {
-    "main.css": "/makval/static/css/main.ecc9187a.css",
-    "main.js": "/makval/static/js/main.4b94c12d.js",
-    "static/media/kino-app.png": "/makval/static/media/kino-app.62cf7de73f894afe2f59.png",
-    "static/media/convert.png": "/makval/static/media/convert.1e764ab3dd33302ff108.png",
-    "static/media/pho.png": "/makval/static/media/pho.aa2aa107f12e72d46dc5.png",
+    "main.css": "/makval/static/css/main.007e4b5b.css",
+    "main.js": "/makval/static/js/main.868f6552.js",
+    "static/media/header-photo.JPG": "/makval/static/media/header-photo.4c8dac481dc2fa42f16e.JPG",
     "static/media/h8nXNQI1_male_9_cartoon4_preview.png": "/makval/static/media/h8nXNQI1_male_9_cartoon4_preview.b677f57570f3513f72e0.png",
     "static/media/h8nXNQI1_male_9_cartoon1_preview.png": "/makval/static/media/h8nXNQI1_male_9_cartoon1_preview.12503592ac64c57eac3e.png",
-    "static/media/h8nXNQI1_male_9_cartoon6_preview.png": "/makval/static/media/h8nXNQI1_male_9_cartoon6_preview.a0e0d68fbf11b4339e39.png",
-    "static/media/tat.png": "/makval/static/media/tat.ab6c9bff7b9071c3674a.png",
     "index.html": "/makval/index.html",
-    "main.ecc9187a.css.map": "/makval/static/css/main.ecc9187a.css.map",
-    "main.4b94c12d.js.map": "/makval/static/js/main.4b94c12d.js.map"
+    "main.007e4b5b.css.map": "/makval/static/css/main.007e4b5b.css.map",
+    "main.868f6552.js.map": "/makval/static/js/main.868f6552.js.map"
   },
   "entrypoints": [
-    "static/css/main.ecc9187a.css",
-    "static/js/main.4b94c12d.js"
+    "static/css/main.007e4b5b.css",
+    "static/js/main.868f6552.js"
   ]
 }
