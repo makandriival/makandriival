@@ -17,8 +17,20 @@ const Portfolio = () => {
           <li>lots of props movement</li>
           <li>styling sucks, but hey im not a designer</li>
         </ul>
-            <a href="https://github.com/makandriival/kino-react-app/tree/main/kinomak">GitHub</a>
-            <a href='https://makandriival.github.io/kino-react-app/'>Kino-App Live Demo</a>
+            <a
+              href="https://github.com/makandriival/kino-react-app/tree/main/kinomak"
+              rel="noreferrer"
+              target="_blank"
+            >
+              GitHub
+            </a>
+            <a
+              href='https://makandriival.github.io/kino-react-app/'
+              rel="noreferrer"
+              target="_blank"
+            >
+              Kino-App Live Demo
+            </a>
         </article>
 
         <article className='portfolio__item'>
@@ -30,8 +42,45 @@ const Portfolio = () => {
           <li>used ternary operator for converter logic</li>
           <li>its not perfect, but it works</li>
         </ul>
-            <a href="https://github.com/makandriival/converter-angular-project">GitHub</a>
-            <a href="https://makandriival.github.io/converter-angular-project/">Live Demo</a>
+            <a
+              href="https://github.com/makandriival/converter-angular-project"
+              rel="noreferrer"
+              target="_blank"
+            >
+              GitHub
+            </a>
+            <a
+              href="https://makandriival.github.io/converter-angular-project/"
+              rel="noreferrer"
+              target="_blank"
+            >
+              Live Demo
+            </a>
+        </article>
+
+        <article className='portfolio__item'>
+        <h3 className='portfolio__item__heading'>Todo App</h3>
+        <ul>
+          <li>React with Typescript</li>
+          <li>MateAcademy api</li>
+          <li>input to create new todo</li>
+          <li>Bylma for styling</li>
+          <li>Used props to transfer data between components</li>
+        </ul>
+            <a
+              rel="noreferrer"
+              target="_blank"
+              href="https://github.com/makandriival/toDoApp"
+            >
+              GitHub
+            </a>
+            <a
+              rel="noreferrer"
+              target="_blank"
+              href="https://makandriival.github.io/toDoApp/"
+            >
+              Live Demo
+            </a>
         </article>
         </div>
 
