@@ -7,6 +7,53 @@ const Portfolio = () => {
       <h2>Projects</h2>
 
         <div className='portfolio__container'>
+        <article className='portfolio__item'>
+        <h3 className='portfolio__item__heading'>myBike Landing</h3>
+        <ul>
+          <li>Landing page</li>
+          <li>Made on React</li>
+          <li>gsx, html, scss, classnames</li>
+        </ul>
+            <a
+              rel="noreferrer"
+              target="_blank"
+              href="https://github.com/makandriival/mybike"
+            >
+              GitHub
+            </a>
+            <a
+              rel="noreferrer"
+              target="_blank"
+              href="https://makandriival.github.io/mybike/"
+            >
+              Live Demo
+            </a>
+        </article>
+
+        <article className='portfolio__item'>
+        <h3 className='portfolio__item__heading'>Todo App</h3>
+        <ul>
+          <li>React with Typescript</li>
+          <li>MateAcademy api</li>
+          <li>input to create new todo</li>
+          <li>Bylma for styling</li>
+          <li>Used props to transfer data between components</li>
+        </ul>
+            <a
+              rel="noreferrer"
+              target="_blank"
+              href="https://github.com/makandriival/toDoApp"
+            >
+              GitHub
+            </a>
+            <a
+              rel="noreferrer"
+              target="_blank"
+              href="https://makandriival.github.io/toDoApp/"
+            >
+              Live Demo
+            </a>
+        </article>
         
         <article className='portfolio__item'>    
         <h3 className='portfolio__item__heading'>Kino-React-App</h3>
@@ -53,31 +100,6 @@ const Portfolio = () => {
               href="https://makandriival.github.io/converter-angular-project/"
               rel="noreferrer"
               target="_blank"
-            >
-              Live Demo
-            </a>
-        </article>
-
-        <article className='portfolio__item'>
-        <h3 className='portfolio__item__heading'>Todo App</h3>
-        <ul>
-          <li>React with Typescript</li>
-          <li>MateAcademy api</li>
-          <li>input to create new todo</li>
-          <li>Bylma for styling</li>
-          <li>Used props to transfer data between components</li>
-        </ul>
-            <a
-              rel="noreferrer"
-              target="_blank"
-              href="https://github.com/makandriival/toDoApp"
-            >
-              GitHub
-            </a>
-            <a
-              rel="noreferrer"
-              target="_blank"
-              href="https://makandriival.github.io/toDoApp/"
             >
               Live Demo
             </a>
