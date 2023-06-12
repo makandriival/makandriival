@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/makval/static/css/main.007e4b5b.css",
-    "main.js": "/makval/static/js/main.48a90b1b.js",
+    "main.css": "/makval/static/css/main.b12d6557.css",
+    "main.js": "/makval/static/js/main.f499d3e3.js",
     "static/media/header-photo.JPG": "/makval/static/media/header-photo.4c8dac481dc2fa42f16e.JPG",
     "static/media/h8nXNQI1_male_9_cartoon4_preview.png": "/makval/static/media/h8nXNQI1_male_9_cartoon4_preview.b677f57570f3513f72e0.png",
     "static/media/h8nXNQI1_male_9_cartoon1_preview.png": "/makval/static/media/h8nXNQI1_male_9_cartoon1_preview.12503592ac64c57eac3e.png",
     "index.html": "/makval/index.html",
-    "main.007e4b5b.css.map": "/makval/static/css/main.007e4b5b.css.map",
-    "main.48a90b1b.js.map": "/makval/static/js/main.48a90b1b.js.map"
+    "main.b12d6557.css.map": "/makval/static/css/main.b12d6557.css.map",
+    "main.f499d3e3.js.map": "/makval/static/js/main.f499d3e3.js.map"
   },
   "entrypoints": [
-    "static/css/main.007e4b5b.css",
-    "static/js/main.48a90b1b.js"
+    "static/css/main.b12d6557.css",
+    "static/js/main.f499d3e3.js"
   ]
 }
