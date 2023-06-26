@@ -21,14 +21,24 @@ const Header = () => {
         <h2 className='header__h2'>
           Andrii Makarov
         </h2>
-        <button 
-          className='header__contactBtn btn'
+        <div className="header__btns">
+          <button 
+          className='header__contactBtn button'
           onClick={() => {
             setContactOpen(true);
           }}
-        >
-          contact
-        </button>
+          >
+            contact
+          </button>
+          <a
+            rel="noreferrer"
+            target="_blank"
+            href="https://drive.google.com/file/d/1TbUBdRy2gNdxJdeeUhlGuJP_y-6FU_2U/view?usp=sharing"
+            className='button'
+          >
+            CV
+          </a>
+        </div>
         {isContactOpen && (
           <Contact closeContact={handleCloseContact} />
         )}

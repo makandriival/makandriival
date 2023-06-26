@@ -4,9 +4,20 @@
   background-color: rgb(33, 36, 36);
   padding: 1rem;
 
+  max-width: 1000px;
+  margin: 0 auto 1rem;
+
   @media (max-width: 600px) {
     flex-direction: column;
     align-items: center;
+  }
+
+  &__h1 {
+    font-size: 40px;
+  }
+
+  &__h2 {
+    font-size: 20px;
   }
 
   &__img {
@@ -20,5 +31,12 @@
     background-repeat: no-repeat;
 
     border-radius: 50%;
+  }
+
+  &__btns {
+    margin-top: 1rem;
+
+    display: flex;
+    gap: 1rem;
   }
 }
